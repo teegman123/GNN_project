@@ -1,0 +1,106 @@
+nohup: ignoring input
+[SCR TEST] Running multi-stage training (short test)...
+Error importing huggingface_hub.hub_mixin: No module named 'idna'
+/home/temccrac/Downloads/anaconda3/envs/pyg112/lib/python3.9/site-packages/torch/utils/cpp_extension.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined]
+Namespace(hidden=512, num_hops=5, label_num_hops=9, seed=0, lr=0.001, dataset='ogbn-products', dropout=0.5, gpu=1, weight_decay=0, eval_every=1, batch_size=50000, batch_size_first=50000, n_layers_1=4, n_layers_2=4, n_layers_3=4, num_runs=1, patience=10, alpha=0.5, temp=1, threshold=0.6, input_drop=0.2, att_drop=0.5, label_drop=0.0, gama=0.1, pre_process=True, residual=True, act='leaky_relu', method='R_GAMLP_RLU', use_emb=True, root='', use_rlu=True, train_num_epochs=[0, 0], stages=[20, 2], pre_dropout=False, bns=False, ema=True, decay=0.9, consis=True, tem=0.5, lam=0.1, weight_style='attention', zero_inits=False, position_emb=False, focal='first', mlp_layer=2, num_heads=1, label_residual=False, label_mlp_layer=4, mean_teacher=False, ema_decay=0.99, adap=False, sup_lam=1.0, kl=False, kl_lam=0.2, top=0.9, down=0.7, warm_up=60, gap=20, giant=False)
+Run 0 start training
+# Nodes: 2449029
+# Edges: 123718280
+# Train: 196615
+# Val: 39323
+# Test: 2213091
+# Classes: 47
+
+load feat_0.pt
+load feat_1.pt
+load feat_2.pt
+load feat_3.pt
+load feat_4.pt
+load feat_5.pt
+GAMLP
+R_GAMLP_RLU
+use ema
+# Params: 3335831
+Epoch 0, Time(s): 2.1921, Train loss: 0.4063, Train acc: 32.1308 
+Epoch 1, Time(s): 1.2066, Train loss: 0.2384, Train acc: 77.0277 
+Validation: Time(s): 0.1397, Val 0.3195, Best Epoch 1, Val 0.3195, Test 0.2357
+Epoch 2, Time(s): 1.2452, Train loss: 0.1999, Train acc: 83.6732 
+Validation: Time(s): 0.1362, Val 0.4843, Best Epoch 2, Val 0.4843, Test 0.3774
+Epoch 3, Time(s): 1.1968, Train loss: 0.1788, Train acc: 85.7391 
+Validation: Time(s): 0.1268, Val 0.3975, Best Epoch 2, Val 0.4843, Test 0.3774
+Epoch 4, Time(s): 1.1946, Train loss: 0.1700, Train acc: 86.1094 
+Validation: Time(s): 0.1263, Val 0.3257, Best Epoch 2, Val 0.4843, Test 0.3774
+Epoch 5, Time(s): 1.1815, Train loss: 0.1670, Train acc: 86.1547 
+Validation: Time(s): 0.1258, Val 0.3160, Best Epoch 2, Val 0.4843, Test 0.3774
+Epoch 6, Time(s): 1.2042, Train loss: 0.1547, Train acc: 86.4914 
+Validation: Time(s): 0.1261, Val 0.3146, Best Epoch 2, Val 0.4843, Test 0.3774
+Epoch 7, Time(s): 1.1862, Train loss: 0.1535, Train acc: 86.6953 
+Validation: Time(s): 0.1264, Val 0.3218, Best Epoch 2, Val 0.4843, Test 0.3774
+Epoch 8, Time(s): 1.1846, Train loss: 0.1444, Train acc: 86.9181 
+Validation: Time(s): 0.1263, Val 0.3734, Best Epoch 2, Val 0.4843, Test 0.3774
+Epoch 9, Time(s): 1.1851, Train loss: 0.1430, Train acc: 86.9542 
+Validation: Time(s): 0.1261, Val 0.4360, Best Epoch 2, Val 0.4843, Test 0.3774
+Epoch 10, Time(s): 1.2319, Train loss: 0.1384, Train acc: 87.0981 
+Validation: Time(s): 0.1357, Val 0.4967, Best Epoch 10, Val 0.4967, Test 0.3966
+Epoch 11, Time(s): 1.2161, Train loss: 0.1332, Train acc: 87.3026 
+Validation: Time(s): 0.1278, Val 0.5695, Best Epoch 11, Val 0.5695, Test 0.4576
+Epoch 12, Time(s): 1.3286, Train loss: 0.1338, Train acc: 87.5182 
+Validation: Time(s): 0.1257, Val 0.6555, Best Epoch 12, Val 0.6555, Test 0.5287
+Epoch 13, Time(s): 1.3282, Train loss: 0.1298, Train acc: 87.6205 
+Validation: Time(s): 0.1330, Val 0.7462, Best Epoch 13, Val 0.7462, Test 0.6046
+Epoch 14, Time(s): 1.3419, Train loss: 0.1248, Train acc: 87.7161 
+Validation: Time(s): 0.1319, Val 0.8166, Best Epoch 14, Val 0.8166, Test 0.6683
+Epoch 15, Time(s): 1.1873, Train loss: 0.1249, Train acc: 87.9490 
+Validation: Time(s): 0.1261, Val 0.8597, Best Epoch 15, Val 0.8597, Test 0.7103
+Epoch 16, Time(s): 1.1871, Train loss: 0.1234, Train acc: 88.0558 
+Validation: Time(s): 0.1266, Val 0.8782, Best Epoch 16, Val 0.8782, Test 0.7337
+Epoch 17, Time(s): 1.2139, Train loss: 0.1225, Train acc: 88.1311 
+Validation: Time(s): 0.1274, Val 0.8872, Best Epoch 17, Val 0.8872, Test 0.7445
+Epoch 18, Time(s): 1.2150, Train loss: 0.1172, Train acc: 88.1611 
+Validation: Time(s): 0.1318, Val 0.8901, Best Epoch 18, Val 0.8901, Test 0.7480
+Epoch 19, Time(s): 1.2001, Train loss: 0.1179, Train acc: 88.3086 
+Validation: Time(s): 0.1282, Val 0.8915, Best Epoch 19, Val 0.8915, Test 0.7483
+Best Epoch 19, Val 0.8915, Test 0.7483
+This history model Train ACC is 0.8962388424077512
+This history model Valid ACC is 0.8915138722884826
+This history model Test ACC is 0.7482579794504609
+Stage: 1, confident nodes: 1580380
+Stage: 1, confident_cons nodes: 1418311
+use teacher label
+GAMLP
+R_GAMLP_RLU
+# Params: 3335831
+Epoch 0, Time(s): 22.8829, Train loss: 0.1720, Train acc: 77.9310 
+Epoch 1, Time(s): 22.7134, Train loss: 0.0789, Train acc: 86.4542 
+Validation: Time(s): 0.2424, Val 0.8793, Best Epoch 1, Val 0.8793, Test 0.7202
+Best Epoch 1, Val 0.8793, Test 0.7202
+Average val accuracy: 0.8793, std: 0.0000
+Average test accuracy: 0.7202, std: 0.0000
+[SCR TEST] Searching for last-stage prediction file (stage 1)...
+[SCR TEST] Using SCR prediction file: ./output/ogbn-products/a1fa52e3f77545ddbc5cbac153f7744b_1_R_GAMLP_RLU.pt
+[SCR TEST] Basename for post-processing: a1fa52e3f77545ddbc5cbac153f7744b_1_R_GAMLP_RLU
+[SCR TEST] Running post_processing (C&S)...
+Error importing huggingface_hub.hub_mixin: No module named 'idna'
+/home/temccrac/Downloads/anaconda3/envs/pyg112/lib/python3.9/site-packages/torch/utils/cpp_extension.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined]
+Namespace(gpu=0, dataset='ogbn-products', root='', file_name='a1fa52e3f77545ddbc5cbac153f7744b_1_R_GAMLP_RLU', search=False, n_trials=300, num_correction_layers=50, correction_alpha=0.4780826957236622, num_smoothing_layers=50, smoothing_alpha=0.40049734940262954, autoscale=False, scale=20.0)
+# Nodes: 2449029
+# Edges: 123718280
+# Train: 196615
+# Val: 39323
+# Test: 2213091
+# Classes: 47
+
+--------------------load_data---------------------
+This history model Train ACC is 0.8808127558934974
+This history model Valid ACC is 0.8793327060498944
+This history model Test ACC is 0.7201773447183147
+---------- Correct & Smoothing ----------
+Valid acc: 0.9150 | Test acc: 0.7556
+Saved C&S predictions (tensor) to: ./output/ogbn-products/a1fa52e3f77545ddbc5cbac153f7744b_1_R_GAMLP_RLU_cs.pt
+Saved C&S predictions (numpy) to: ./output/ogbn-products/a1fa52e3f77545ddbc5cbac153f7744b_1_R_GAMLP_RLU_cs.npy
+Saved C&S hard labels to: ./output/ogbn-products/a1fa52e3f77545ddbc5cbac153f7744b_1_R_GAMLP_RLU_cs_argmax.npy
+[SCR TEST] If you patched post_processing.py to save C&S outputs, check:
+  ls ./output/ogbn-products/a1fa52e3f77545ddbc5cbac153f7744b_1_R_GAMLP_RLU_cs.pt
+[SCR TEST] Also check your model checkpoint(s) in ./output/ogbn-products.
